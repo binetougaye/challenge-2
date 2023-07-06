@@ -9,7 +9,7 @@ body{
 }
 .test{
     background-color: white;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
@@ -18,16 +18,19 @@ body{
 }
 .one{
     background-color: bisque;
-    width: 600px;
+    max-width: 600px;
     height: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .circle{
     position: relative;
-    bottom: 50px;
-    left: 250px;
-    width: 96px;
+    /* bottom: 50px;
+    left: 250px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 96px;
     height: 96px;
     border-radius: 48px;
 }
@@ -53,10 +56,10 @@ span,h2{
     height: 1px;
     background-color: #999;
 }
-@media screen and (max-width:900px) {
+/* @media screen and (max-width:900px) {
     .test{
         background-color: white;
-        width: 600px;
+        max-width: 600px;
       
       
         
@@ -65,4 +68,4 @@ span,h2{
         width: 100%;
     }
         
-}
+} */
